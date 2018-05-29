@@ -1,0 +1,26 @@
+create two files "serverTxtFile" and "clientTxtFile" as shared files
+structure : 
+ClientServer_FileSharing/
+  ------------------------------------
+ | DIRECTORY |         FILE          |
+ -------------------------------------
+ |   header  |  fileshareHeader.h    |
+ ------------ ------------------------
+ |   libs    |  send_recv_routines.c |
+ ------------ ------------------------
+ |   server  |   server.c            |
+ |           |   Makefile            |
+ |           |   serverTxtFile       |
+ ------------ ------------------------
+ |   client  |   client.c            |
+ |           |   Makefile            |
+ |           |   clientTxtFile       |
+ -------------------------------------
+
+server/
+# make
+# ./runserver serverTxtFile
+
+client/
+# make
+# ./runclient clientTxtFile
